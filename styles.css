@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  font-family: "Roboto", sans-serif;
+  /* border: 2px solid cyan; */
+}
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  /* border: 5px solid rgb(246, 222, 8); */
+  max-width: 50%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+  /* margin: 2rem; */
+  background-color: black;
+  max-height: 20rem;
+  /* width: 100vw; */
+  /* border: 2px solid cyan; */
+}
+
+nav ul {
+  opacity: 60%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: white;
+  /* border: 2px solid rgb(64, 255, 0); */
+}
+
+/* #login {
+  background-color: white;
+  color: black;
+  padding: 0.7em;
+  text-align: center;
+  font-weight: 600;
+  width: 5rem;
+}
+
+#login:hover {
+  font-weight: 1000;
+  color: white;
+  background-color: rgb(109, 147, 209);
+} */
+
+nav ul li {
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  font-size: large;
+}
+
+nav ul li span {
+  margin-right: 0.4em;
+}
+.navItems:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  opacity: 100%;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* BODY SECCTION- Main Player */
+
+.container {
+  z-index: 2;
+  margin-bottom: 20rem;
+  min-height: 70vh;
+  background: linear-gradient(
+    0deg,
+    rgba(6, 6, 6, 1) 0%,
+    rgba(62, 62, 62, 1) 99%,
+    rgba(108, 108, 124, 1) 100%
+  );
+  color: white;
+  display: grid;
+  /* flex-direction: row; */
+  padding: 3.5rem;
+  width: 100%;
+  border-radius: 12px;
+  max-width: 75%;
+  /* border: 5px solid cyan; */
+  /* background-image: url("bg2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url("bg2.jpg"); */
+}
+
+.container h1 {
+  padding: 10px;
+}
+
+.songItemContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 2rem 2rem; */
+  max-width: 80vw;
+  /* border: 5px solid cyan; */
+}
+
+.songItem {
+  font-family: "Varela Round", sans-serif;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(28, 28, 28);
+  color: rgb(255, 255, 255);
+  margin: 12px 1.5rem;
+  justify-content: flex-start;
+  width: 9rem;
+  border-radius: 10px;
+  /* cursor: pointer; */
+  padding: 1.2rem;
+  /* border: 2px solid rgb(227, 246, 151); */
+}
+.songItem:hover {
+  background-color: rgb(50, 50, 50);
+  /* font-weight: bolder; */
+  transition: 200ms ease-in;
+  /* color: aqua; */
+  /* transform: scale(1.07);
+  transform-origin: bottom; */
+}
+
+.hide {
+  /* position: relative;
+  left: 50%;
+  bottom: 25%; */
+  visibility: hidden;
+  font-size: 2rem;
+  color: rgb(0, 244, 0);
+}
+.songItem:hover .hide {
+  visibility: visible;
+}
+.songImageDiv {
+  /* border: 2px solid chocolate; */
+  max-height: 8rem;
+}
+.songimg {
+  cursor: pointer;
+  max-height: 8rem;
+  max-width: 8rem;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  margin: 0 5px;
+  border-radius: 5%;
+  z-index: 2;
+}
+
+.songImageDiv > .fa-circle-play,
+.songImageDiv > .fa-pause-circle {
+  position: relative;
+  bottom: 3rem;
+  left: 4.05rem;
+  z-index: 5;
+}
+
+i.fa-circle {
+  position: relative;
+  bottom: 5rem;
+  left: 4rem;
+  z-index: 4;
+  color: black;
+  /* border: 4px solid hotpink; */
+}
+
+.songlistplay {
+  margin: 0 20px;
+  left: 20px;
+}
+.songimagediv > i {
+  transition: 250ms ease-in;
+}
+
+.red {
+  background-color: red;
+}
+.songName {
+  padding-top: 0.8rem;
+  padding-left: 0;
+  max-width: 9rem;
+  height: 1.2rem;
+  overflow: hidden;
+}
+.artistName {
+  opacity: 50%;
+  height: 1.4rem;
+  overflow: hidden;
+}
+
+/* BOTTOM-SECCTION- It contains the progress bar, volume bar and navigation */
+
+.bottom {
+  z-index: 9;
+  position: fixed;
+  height: 15%;
+  background-color: rgb(25, 25, 25);
+  bottom: 0;
+  /* border: 2px solid cyan; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+.bottom-child {
+  position: sticky;
+  padding: 0.7rem;
+  display: flex;
+  left: 20rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* top: 10; */
+  /* left: 0; */
+  /* border: 5px solid chocolate; */
+}
+
+.songInfo {
+  font-family: "Varela Round", sans-serif;
+  position: relative;
+  left: 1.2rem;
+  top: 2rem;
+  /* border: 2px solid white; */
+  max-width: 18rem;
+  overflow: hidden;
+  max-height: 1.5rem;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.bottom-child > .top {
+  /* border: 2px solid green; */
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+#durationzero {
+  margin-right: 1.05rem;
+}
+
+#duration-audio {
+  margin-right: 1.2rem;
+  margin-left: -1.1rem;
+}
+#myProgressBar {
+  width: 50vw;
+  margin-right: 2em;
+  cursor: pointer;
+  accent-color: rgb(255, 255, 255);
+}
+#myProgressBar:hover {
+  accent-color: rgb(250, 212, 0);
+}
+#volume-section {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#myVolumeBar {
+  width: 10vw;
+  min-width: 5rem;
+  /* margin-top: 1.7rem; */
+  cursor: pointer;
+  accent-color: rgb(67, 251, 73);
+}
+
+.sliders {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.audioslider {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+}
+
+.icons {
+  font-size: larger;
+  position: relative;
+  bottom: 1.3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1.5rem 2.1rem; */
+  /* border: 2px solid green; */
+  width: 15rem;
+  color: rgb(255, 255, 255);
+}
+
+#masterPlay {
+  color: white;
+  /* border: 2px solid cyan; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+i {
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+#disclaimer {
+  margin-top: 2rem;
+  position: relative;
+  opacity: 60%;
+}

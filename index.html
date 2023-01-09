@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASpotify: A Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <div class="bottom">
+    <div class="songInfo">
+      <img src="playing.gif" alt="equaliser" width="50px" id="gif" />
+      <span id="giftext"></span>
+    </div>
+    <div class="bottom-child">
+      <div class="sliders top">
+        <div class="audioslider">
+          <span id="durationzero">0:00 </span>
+          <input
+            type="range"
+            name="range"
+            id="myProgressBar"
+            min="0"
+            value="0"
+            max="100"
+          />
+          <span id="duration-audio">0:00</span>
+        </div>
+
+        <div class="volume-slider top" id="volume-section">
+          <span>-</span>
+          <input
+            type="range"
+            name="vrange"
+            id="myVolumeBar"
+            min="0"
+            value="50"
+            max="100"
+          />
+          <span>+</span>
+        </div>
+      </div>
+      <div class="icons">
+        <i id="previous" class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-circle-play fa-xl" id="masterPlay"></i>
+        <i id="next" class="fa-solid fa-forward-step"></i>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="brand">
+          <img src="logo.png" alt="Spotify logo" /> Aspotify
+        </div>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> home </span
+            ><span class="navItems">Home</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> search </span
+            ><span class="navItems">Search</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> vertical_split </span>
+            <span class="navItems">Your Library</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> add_box </span
+            ><span class="navItems">Create Playlist</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> favorite </span
+            ><span class="navItems">Liked Songs</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <h1>Latest Bollywood Songs</h1>
+      <div class="songItemContainer">
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="1" src="lmly.jpg" alt="1" />
+            <i id="i1" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 1</span>
+          <span class="artistName">Artist Name 1</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="2" src="lmly.jpg" alt="2" />
+            <i id="i2" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 2</span>
+          <span class="artistName">Artist Name 2</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="3" src="lmly.jpg" alt="3" />
+            <i id="i3" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 3</span
+          ><span class="artistName">Artist Name 3</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="4" src="lmly.jpg" alt="4" />
+            <i id="i4" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 4</span
+          ><span class="artistName">Artist Name 4</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="5" src="lmly.jpg" alt="5" />
+            <i id="i5" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 5</span
+          ><span class="artistName">Artist Name 5</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="6" src="lmly.jpg" alt="6" />
+            <i id="i6" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+
+          <span class="songName">Song Name 6</span
+          ><span class="artistName">Artist Name 6</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="7" src="lmly.jpg" alt="7" />
+            <i id="i7" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 7</span>
+          <span class="artistName">Artist Name 7</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="8" src="lmly.jpg" alt="8" />
+            <i id="i8" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 8</span>
+          <span class="artistName">Artist Name 8</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="9" src="lmly.jpg" alt="9" />
+            <i id="i9" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 9</span>
+          <span class="artistName">Artist Name 9</span>
+        </div>
+        <div class="songItem">
+          <div class="songImageDiv">
+            <img class="songimg" id="10" src="lmly.jpg" alt="10" />
+            <i id="i10" class="fa-solid songItemPlay hide fa-circle-play"></i
+            ><i class="fa-solid songItemPlay hide fa-circle"></i>
+          </div>
+          <span class="songName">Song Name 10</span>
+          <span class="artistName">Artist Name 10</span>
+        </div>
+      </div>
+      <div id="disclaimer">
+        Disclaimer: No copyright infringement intended. The website is for
+        educational purpose only. The content belongs to the respective content
+        creators
+      </div>
+    </div>
+  </body>
+
+  <script src="https://kit.fontawesome.com/9dd739d3be.js"></script>
+  <script src="script.js"></script>
+</html>
