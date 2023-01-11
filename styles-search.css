@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,21 +44,6 @@ nav ul a {
   /* border: 2px solid rgb(64, 255, 0); */
 }
 
-/* #login {
-  background-color: white;
-  color: black;
-  padding: 0.7em;
-  text-align: center;
-  font-weight: 600;
-  width: 5rem;
-}
-
-#login:hover {
-  font-weight: 1000;
-  color: white;
-  background-color: rgb(109, 147, 209);
-} */
-
 nav ul li {
   padding: 12px;
   display: flex;
@@ -87,11 +73,52 @@ nav ul li span {
   color: white;
   margin-bottom: 2rem;
 }
+.top-nav {
+  /* border: 2px solid cyan; */
+  height: 5rem;
+  display: flex;
+  width: calc(100%-10rem);
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
 
-/* BODY SECCTION- Main Player */
+.top-nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 60%;
+}
+.search-bar {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.2rem;
+  border-radius: 2rem;
+  width: 75%;
+  overflow: hidden;
+}
+.search-bar .material-symbols-outlined {
+  margin-right: 1.1rem;
+}
+#search-bar-input {
+  border: none;
+  width: 25rem;
+  font-size: 1.1rem;
+}
+#search-bar-input:focus {
+  outline: none;
+}
 
-.container {
-  z-index: 2;
+.md-48 {
+  font-size: 1.8rem !important;
+}
+.top-nav-left a {
+  color: white;
+}
+.container-search {
   margin-bottom: 20rem;
   min-height: 70vh;
   background: linear-gradient(
@@ -101,124 +128,51 @@ nav ul li span {
     rgba(108, 108, 124, 1) 100%
   );
   color: white;
-  display: grid;
-  /* flex-direction: row; */
-  padding: 3.5rem;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 3.5rem; */
   border-radius: 12px;
-  max-width: 75%;
+  max-width: 100%;
   /* border: 5px solid cyan; */
-  /* background-image: url("bg2.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-image: url("bg2.jpg"); */
+}
+.top-nav-right {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.top-nav-right span {
+  padding: 0 0.2rem;
 }
 
-.container h1 {
-  padding: 10px;
+.browse {
+  /* border: 2px solid cyan; */
+  padding: 2rem;
+  font-family: sans-serif;
 }
-
-.songItemContainer {
-  margin-top: 1.5rem;
+.browse-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.browse-items {
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* padding: 2rem 2rem; */
-  max-width: 80vw;
-  /* border: 5px solid cyan; */
+  gap: 2rem;
 }
-
-.songItem {
-  font-family: "Varela Round", sans-serif;
-  height: 11rem;
+.items {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0.7rem;
   display: flex;
-  flex-direction: column;
-  background-color: rgb(28, 28, 28);
-  color: rgb(255, 255, 255);
-  margin: 12px 1.5rem;
-  justify-content: flex-start;
-  width: 9rem;
-  border-radius: 10px;
-  /* cursor: pointer; */
-  padding: 1.2rem;
-  /* border: 2px solid rgb(227, 246, 151); */
-}
-.songItem:hover {
-  background-color: rgb(50, 50, 50);
-  /* font-weight: bolder; */
-  transition: 200ms ease-in;
-  /* color: aqua; */
-  /* transform: scale(1.07);
-  transform-origin: bottom; */
+  align-items: top;
+  justify-content: left;
+  background-color: rgb(8, 93, 93);
+  font-size: 1.6rem;
+  padding: 0.9rem;
 }
 
-.hide {
-  /* position: relative;
-  left: 50%;
-  bottom: 25%; */
-  visibility: hidden;
-  font-size: 2rem;
-  color: rgb(0, 244, 0);
-}
-.songItem:hover .hide {
-  visibility: visible;
-}
-.songImageDiv {
-  /* border: 2px solid chocolate; */
-  max-height: 8rem;
-}
-.songimg {
-  cursor: pointer;
-  max-height: 8rem;
-  max-width: 8rem;
-  width: 8rem;
-  height: 8rem;
-  object-fit: cover;
-  margin: 0 5px;
-  border-radius: 5%;
-  z-index: 2;
-}
-
-.songImageDiv > .fa-circle-play,
-.songImageDiv > .fa-pause-circle {
-  position: relative;
-  bottom: 3rem;
-  left: 4.05rem;
-  z-index: 5;
-}
-
-i.fa-circle {
-  position: relative;
-  bottom: 5rem;
-  left: 4rem;
-  z-index: 4;
-  color: black;
-  /* border: 4px solid hotpink; */
-}
-
-.songlistplay {
-  margin: 0 20px;
-  left: 20px;
-}
-.songimagediv > i {
-  transition: 250ms ease-in;
-}
-
-.red {
-  background-color: red;
-}
-.songName {
-  padding-top: 0.8rem;
-  padding-left: 0;
-  max-width: 9rem;
-  height: 1.2rem;
-  overflow: hidden;
-}
-.artistName {
-  opacity: 50%;
-  height: 1.4rem;
-  overflow: hidden;
-}
+/* BODY SECCTION- Main Player */
 
 /* BOTTOM-SECCTION- It contains the progress bar, volume bar and navigation */
 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASpotify- Search</title>
+    <link rel="stylesheet" href="styles-search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <div class="bottom">
+    <div class="songInfo">
+      <img src="playing.gif" alt="equaliser" width="50px" id="gif" />
+      <span id="giftext"></span>
+    </div>
+    <div class="bottom-child">
+      <div class="sliders top">
+        <div class="audioslider">
+          <span id="durationzero">0:00 </span>
+          <input
+            type="range"
+            name="range"
+            id="myProgressBar"
+            min="0"
+            value="0"
+            max="100"
+          />
+          <span id="duration-audio">0:00</span>
+        </div>
+
+        <div class="volume-slider top" id="volume-section">
+          <span>-</span>
+          <input
+            type="range"
+            name="vrange"
+            id="myVolumeBar"
+            min="0"
+            value="50"
+            max="100"
+          />
+          <span>+</span>
+        </div>
+      </div>
+      <div class="icons">
+        <i id="previous" class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-circle-play fa-xl" id="masterPlay"></i>
+        <i id="next" class="fa-solid fa-forward-step"></i>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="brand">
+          <img src="logo.png" alt="Spotify logo" /> Aspotify
+        </div>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> home </span
+            ><span class="navItems"><a href="index.html">Home</a></span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> search </span
+            ><span class="navItems" id="nav-search">Search</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> vertical_split </span>
+            <span class="navItems">Your Library</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> add_box </span
+            ><span class="navItems">Create Playlist</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> favorite </span
+            ><span class="navItems">Liked Songs</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-search">
+      <div class="top-nav">
+        <div class="top-nav-left">
+          <a href="index.html">
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+          </a>
+          <a>
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </a>
+          <div class="search-bar">
+            <span class="material-symbols-outlined md-48"> search </span>
+            <input id="search-bar-input" placeholder="What do you want to listen to?"
+              ></input
+            >
+          </div>
+        </div>
+        <div class="top-nav-right">
+          <span class="material-symbols-rounded md-48"> account_circle </span>
+          <span id="top-nav-username">Ankit</span>
+          <span class="material-symbols-rounded"> expand_more </span>
+        </div>
+      </div>
+      <div class="browse">
+        <div class="browse-header">Browse All</div>
+        <div class="browse-items">
+          <div class="items">2022 Wrapped</div>
+          <div class="items">Podcasts</div>
+          <div class="items">Made For You</div>
+          <div class="items">New Releases</div>
+          <div class="items">Discover</div>
+          <div class="items">Trending</div>
+          <div class="items">Romance</div>
+          <div class="items">Charts</div>
+          <div class="items">Live Events</div>
+          <div class="items">Pop</div>
+          <div class="items">Indie</div>
+          <div class="items">Tamil</div>
+          <div class="items">Telugu</div>
+          <div class="items">Punjabi</div>
+        </div>
+      </div>
+      <div id="disclaimer">
+        Disclaimer: No copyright infringement intended. The website is for
+        educational purpose only. The content belongs to the respective content
+        creators
+      </div>
+    </div>
+  </body>
+
+  <script src="https://kit.fontawesome.com/9dd739d3be.js"></script>
+  <script src="script.js"></script>
+</html>
