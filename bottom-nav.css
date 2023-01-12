@@ -1,0 +1,200 @@
+/* BOTTOM-SECCTION- It contains the progress bar, volume bar and navigation */
+
+.bottom {
+  z-index: 9;
+  position: fixed;
+  height: 13vh;
+  background-color: rgb(25, 25, 25);
+  bottom: 0;
+  /* border: 2px solid cyan; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+.bottom-child {
+  position: sticky;
+  padding: 0.5rem;
+  display: flex;
+  left: 20rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* top: 10; */
+  /* left: 0; */
+  /* border: 5px solid chocolate; */
+}
+
+.songInfo {
+  font-family: "Varela Round", sans-serif;
+  position: relative;
+  left: 1.2rem;
+  top: 2rem;
+  /* border: 2px solid white; */
+  max-width: 18rem;
+  overflow: hidden;
+  max-height: 1.5rem;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.bottom-child > .top {
+  /* border: 2px solid green; */
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+#durationzero {
+  margin-right: 1.05rem;
+}
+
+#duration-audio {
+  margin-right: 1.2rem;
+  margin-left: -1.1rem;
+}
+#myProgressBar {
+  width: 50vw;
+  margin-right: 2em;
+  cursor: pointer;
+  accent-color: rgb(255, 255, 255);
+}
+#myProgressBar:hover {
+  accent-color: rgb(250, 212, 0);
+}
+#volume-section {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#myVolumeBar {
+  width: 10vw;
+  min-width: 5rem;
+  /* margin-top: 1.7rem; */
+  cursor: pointer;
+  accent-color: rgb(67, 251, 73);
+}
+
+.sliders {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.audioslider {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+}
+
+.icons {
+  font-size: larger;
+  position: relative;
+  bottom: 1.3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1.5rem 2.1rem; */
+  /* border: 2px solid green; */
+  width: 15rem;
+  color: rgb(255, 255, 255);
+}
+
+#masterPlay {
+  color: white;
+  /* border: 2px solid cyan; */
+}
+
+@media only screen and (max-width: 1410px) {
+  .songInfo {
+    font-family: "Varela Round", sans-serif;
+    position: relative;
+    left: -2rem;
+    top: 1rem;
+    /* border: 2px solid white; */
+    max-width: 18rem;
+    overflow: hidden;
+    max-height: 1.5rem;
+  }
+  .bottom {
+    z-index: 9;
+    position: fixed;
+    height: 15vh;
+    background-color: rgb(25, 25, 25);
+    bottom: 0;
+    /* border: 2px solid cyan; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+  #volume-section {
+    display: none;
+  }
+  .sliders {
+    /* border: 2px solid cyan; */
+    justify-content: center;
+  }
+  .bottom-child {
+    position: sticky;
+    /* padding: 0.5rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid aqua; */
+    width: 100%;
+  }
+  .bottom {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+  .bottom-child {
+    position: sticky;
+    /* padding: 0.5rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid aqua; */
+    width: 100%;
+  }
+  .bottom {
+    z-index: 9;
+    position: fixed;
+    height: 15vh;
+    background-color: rgb(25, 25, 25);
+    bottom: 0;
+    /* border: 2px solid cyan; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+  .songInfo {
+    font-family: "Varela Round", sans-serif;
+    position: relative;
+    left: -2rem;
+    top: 1rem;
+    /* border: 2px solid white; */
+    max-width: 18rem;
+    overflow: hidden;
+    max-height: 1.5rem;
+    margin-bottom: -1.2rem;
+  }
+}

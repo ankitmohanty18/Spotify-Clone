@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASpotify: A Clone</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bottom-nav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,11 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <div class="bottom">
@@ -65,8 +71,8 @@
         </div>
         <ul>
           <li>
-            <span class="material-symbols-rounded"> home </span
-            ><span class="navItems">Home</span>
+            <span class="material-symbols-rounded focus"> home </span
+            ><span class="navItems focus">Home</span>
           </li>
           <li>
             <span class="material-symbols-rounded"> search </span
@@ -80,7 +86,7 @@
           </li>
           <li>
             <span class="material-symbols-rounded"> vertical_split </span>
-            <span class="navItems">Your Library</span>
+            <span class="navItems"><a href="collection.html" onclick="window.open('collection.html', '_self')">Your Library</a></span>
           </li>
         </ul>
         <ul>
@@ -96,6 +102,21 @@
       </nav>
     </div>
     <div class="container">
+      <div class="top-nav">
+        <div class="top-nav-left">
+          <a">
+            <span class="material-symbols-outlined" style="opacity:30%"> arrow_back_ios </span>
+          </a>
+          <a>
+            <span class="material-symbols-outlined" style="opacity:30%"> arrow_forward_ios </span>
+          </a>
+        </div>
+        <div class="top-nav-right">
+          <span class="material-symbols-rounded md-48"> account_circle </span>
+          <span id="top-nav-username">Ankit</span>
+          <span class="material-symbols-rounded"> expand_more </span>
+        </div>
+      </div>
       <h1>Latest Bollywood Songs</h1>
       <div class="songItemContainer">
         <div class="songItem">
