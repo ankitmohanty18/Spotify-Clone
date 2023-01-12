@@ -96,7 +96,7 @@ nav ul li span:not(.focus) {
   padding: 3.5rem;
   width: 100%;
   border-radius: 12px;
-  max-width: 75%;
+  max-width: 100%;
   /* border: 5px solid cyan; */
   /* background-image: url("bg2.jpg"); */
   background-repeat: no-repeat;
@@ -276,4 +276,19 @@ i {
   margin-top: 2rem;
   position: relative;
   opacity: 60%;
+}
+
+@media only screen and (max-width: 1410px) {
+  .container {
+    width: 100vw;
+    padding: 0;
+    justify-items: center;
+  }
+  .songItemContainer {
+    justify-content: center;
+  }
+  div h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }

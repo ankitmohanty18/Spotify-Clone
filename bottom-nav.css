@@ -19,6 +19,7 @@
   padding: 0.5rem;
   display: flex;
   left: 20rem;
+  bottom: 2rem;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -31,7 +32,7 @@
   font-family: "Varela Round", sans-serif;
   position: relative;
   left: 1.2rem;
-  top: 2rem;
+  top: 1.8rem;
   /* border: 2px solid white; */
   max-width: 18rem;
   overflow: hidden;
@@ -115,8 +116,8 @@
   .songInfo {
     font-family: "Varela Round", sans-serif;
     position: relative;
-    left: -2rem;
-    top: 1rem;
+    left: 0rem;
+    top: 0.3rem;
     /* border: 2px solid white; */
     max-width: 18rem;
     overflow: hidden;
@@ -189,12 +190,11 @@
   .songInfo {
     font-family: "Varela Round", sans-serif;
     position: relative;
-    left: -2rem;
-    top: 1rem;
+    left: 0rem;
+    top: 0.3rem;
     /* border: 2px solid white; */
     max-width: 18rem;
     overflow: hidden;
     max-height: 1.5rem;
-    margin-bottom: -1.2rem;
   }
 }

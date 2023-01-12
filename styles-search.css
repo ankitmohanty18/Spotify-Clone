@@ -9,7 +9,6 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  /* overflow-x: hidden; */
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -177,7 +176,13 @@ nav ul li span:not(.focus) {
   overflow: hidden;
   cursor: pointer;
   /* border: 5px solid brown; */
+  transition: 200ms ease-in;
 }
+.items:hover {
+  position: relative;
+  bottom: 0.4rem;
+}
+
 .items-text {
   height: 50%;
   width: 50%;
@@ -193,8 +198,6 @@ nav ul li span:not(.focus) {
   left: 5%;
   transform: rotate(20deg);
 }
-
-/* BODY SECCTION- Main Player */
 
 a {
   text-decoration: none;
