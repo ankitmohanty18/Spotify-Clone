@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASpotify- Liked Songs</title>
+    <link rel="stylesheet" href="underconst.css" />
+    <link rel="stylesheet" href="bottom-nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <div class="bottom">
+    <div class="songInfo">
+      <img src="playing.gif" alt="equaliser" width="50px" id="gif" />
+      <span id="giftext"></span>
+    </div>
+    <div class="bottom-child">
+      <div class="sliders top">
+        <div class="audioslider">
+          <span id="durationzero">0:00 </span>
+          <input
+            type="range"
+            name="range"
+            id="myProgressBar"
+            min="0"
+            value="0"
+            max="100"
+          />
+          <span id="duration-audio">0:00</span>
+        </div>
+
+        <div class="volume-slider top" id="volume-section">
+          <span>-</span>
+          <input
+            type="range"
+            name="vrange"
+            id="myVolumeBar"
+            min="0"
+            value="50"
+            max="100"
+          />
+          <span>+</span>
+        </div>
+      </div>
+      <div class="icons">
+        <i id="previous" class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-circle-play fa-xl" id="masterPlay"></i>
+        <i id="next" class="fa-solid fa-forward-step"></i>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="brand">
+          <img src="logo.png" alt="Spotify logo" /> Aspotify
+        </div>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> home </span
+            ><span class="navItems"
+              ><a href="index.html" onclick="window.open('index.html', '_self')"
+                >Home</a
+              ></span
+            >
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> search </span
+            ><span class="navItems"
+              ><a
+                href="search.html"
+                onclick="window.open('search.html', '_self')"
+                >Search</a
+              ></span
+            >
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> vertical_split </span>
+            <span class="navItems"
+              ><a
+                href="collection.html"
+                onclick="window.open('collection.html', '_self')"
+                >Your Library</a
+              ></span
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span class="material-symbols-rounded"> add_box </span
+            ><span class="navItems"
+              ><a
+                href="playlistcreate.html"
+                onclick="window.open('playlistcreate.html', '_self')"
+                >Create Playlist</a
+              ></span
+            >
+          </li>
+          <li>
+            <span class="material-symbols-rounded"> favorite </span
+            ><span class="navItems"
+              ><a href="liked.html" onclick="window.open('liked.html', '_self')"
+                >Liked Songs</a
+              ></span
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-search">
+      <div class="top-nav">
+        <div class="top-nav-left">
+          <!-- <a href="index.html" onclick="window.open('index.html', '_self')">
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+          </a>
+          <a>
+            <span class="material-symbols-outlined" style="opacity:30%"> arrow_forward_ios </span>
+          </a> -->
+        </div>
+        <!-- <div class="top-nav-right">
+          <span class="material-symbols-rounded md-48"> account_circle </span>
+          <span id="top-nav-username">Ankit</span>
+          <span class="material-symbols-rounded"> expand_more </span>
+        </div> -->
+      </div>
+      <div class="browse">
+        <div class="browse-home">
+          <a
+            href="index.html"
+            style="color: inherit"
+            onclick="window.open('index.html', '_self')"
+            >Home</a
+          >
+        </div>
+        <img src="underconst.png" alt="under Construction" />
+      </div>
+    </div>
+  </body>
+
+  <script src="https://kit.fontawesome.com/9dd739d3be.js"></script>
+  <script src="script.js"></script>
+</html>

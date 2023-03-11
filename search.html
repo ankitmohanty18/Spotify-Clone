@@ -85,11 +85,11 @@
         <ul>
           <li>
             <span class="material-symbols-rounded"> add_box </span
-            ><span class="navItems">Create Playlist</span>
+            ><span class="navItems"><a href="playlistcreate.html" onclick="window.open('playlistcreate.html', '_self')">Create Playlist</a></span>
           </li>
           <li>
             <span class="material-symbols-rounded"> favorite </span
-            ><span class="navItems">Liked Songs</span>
+            ><span class="navItems"><a href="liked.html" onclick="window.open('liked.html', '_self')">Liked Songs</a></span>
           </li>
         </ul>
       </nav>
@@ -119,90 +119,183 @@
       <div class="browse">
         <div class="browse-header">Browse All</div>
         <div class="browse-items">
-          <div class="items" style="background-color:rgb(132,0,231)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  onclick="window.open('underconst.html', '_self')" style="background-color:rgb(132,0,231)">
             <div class='items-text'>
                 2022 Wrapped
             </div>
             <img src="Images/search-img-1.jpg" class="items-img" alt="image">    
             </div>
-          <div class="items" style="background-color:rgb(225, 51, 0)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(225, 51, 0)">
             <div class='items-text'>
                 Podcasts
             </div>
                 <img src="Images/search-img-2.jpg" class="items-img hide" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(30,50,100)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(30,50,100)">
             <div class='items-text'>
                 Made For You
             </div>
                 <img src="Images/search-img-3.jpg" class="items-img hide" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(232,17,91)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(232,17,91)">
             <div class='items-text'>
                 New Releases
             </div>
         <img src="Images/search-img-4.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(233,20,41)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(233,20,41)">
             <div class='items-text'>
                 Discover
             </div>
         <img src="Images/search-img-5.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(176,40,151)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(176,40,151)">
             <div class='items-text'>
                 Trending
             </div>
         <img src="Images/search-img-6.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(165,103,82)" >
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(165,103,82)" >
             <div class='items-text'>
                 Romance
             </div>
         <img src="Images/search-img-7.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(216,64,0)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(216,64,0)">
             <div class='items-text'>
                 Charts
             </div>
         <img src="Images/search-img-8.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(141,103,171)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(141,103,171)">
             <div class='items-text'>
                 Live Events
             </div>
         <img src="Images/search-img-9.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(115,88,255)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(115,88,255)">
             <div class='items-text'>
                 Pop
             </div>
         <img src="Images/search-img-10.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(20,138,8)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(20,138,8)">
             <div class='items-text'>
                 Indie
             </div>
         <img src="Images/search-img-11.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(233,20,41)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(233,20,41)">
             <div class='items-text'>
                 Tamil
             </div>
         <img src="Images/search-img-12.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(176,40,151)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(176,40,151)">
             <div class='items-text'>
                 Telugu
             </div>
         <img src="Images/search-img-13.jpg" class="items-img" alt="image"> 
         </div>
-          <div class="items" style="background-color:rgb(140,25,50)">
+          <div class="items" onclick="window.open('underconst.html', '_self')"  style="background-color:rgb(140,25,50)">
             <div class='items-text'>
                 Punjabi
             </div>
         <img src="Images/search-img-14.jpg" class="items-img" alt="image"> 
         </div>
+        </div>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="1" src="lmly.jpg" alt="1" />
+              <i id="i1" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 1</span>
+            <span class="artistName">Artist Name 1</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="2" src="lmly.jpg" alt="2" />
+              <i id="i2" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 2</span>
+            <span class="artistName">Artist Name 2</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="3" src="lmly.jpg" alt="3" />
+              <i id="i3" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 3</span
+            ><span class="artistName">Artist Name 3</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="4" src="lmly.jpg" alt="4" />
+              <i id="i4" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 4</span
+            ><span class="artistName">Artist Name 4</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="5" src="lmly.jpg" alt="5" />
+              <i id="i5" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 5</span
+            ><span class="artistName">Artist Name 5</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="6" src="lmly.jpg" alt="6" />
+              <i id="i6" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+      
+            <span class="songName">Song Name 6</span
+            ><span class="artistName">Artist Name 6</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="7" src="lmly.jpg" alt="7" />
+              <i id="i7" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 7</span>
+            <span class="artistName">Artist Name 7</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="8" src="lmly.jpg" alt="8" />
+              <i id="i8" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 8</span>
+            <span class="artistName">Artist Name 8</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="9" src="lmly.jpg" alt="9" />
+              <i id="i9" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 9</span>
+            <span class="artistName">Artist Name 9</span>
+          </div>
+          <div class="songItem">
+            <div class="songImageDiv">
+              <img class="songimg" id="10" src="lmly.jpg" alt="10" />
+              <i id="i10" class="fa-solid songItemPlay hide fa-circle-play"></i
+              ><i class="fa-solid songItemPlay hide fa-circle"></i>
+            </div>
+            <span class="songName">Song Name 10</span>
+            <span class="artistName">Artist Name 10</span>
+          </div>
         </div>
       </div>
       <div id="disclaimer">
@@ -211,8 +304,9 @@
         creators
       </div>
     </div>
+    
   </body>
-
+  
   <script src="https://kit.fontawesome.com/9dd739d3be.js"></script>
   <script src="script.js"></script>
 </html>

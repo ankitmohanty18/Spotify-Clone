@@ -148,9 +148,19 @@ nav ul li span:not(.focus) {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
 }
+.browse-home {
+  visibility: hidden;
+}
 .browse-header {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1rem;
+}
+
+.browse img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .browse-items {
   padding-top: 2rem;
@@ -197,10 +207,15 @@ i {
   .container-search {
     width: 100vw;
   }
-  .songItemContainer {
-    visibility: hidden;
+  .browse img {
+    width: 70%;
   }
-}
-.songItemContainer {
-  visibility: hidden;
+  .browse-home {
+    font-size: smaller;
+    opacity: 50%;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    visibility: visible;
+  }
 }

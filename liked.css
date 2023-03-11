@@ -193,14 +193,12 @@ i {
   position: relative;
   opacity: 60%;
 }
+
+.songItemContainer {
+  visibility: hidden;
+}
 @media only screen and (max-width: 750px) {
   .container-search {
     width: 100vw;
   }
-  .songItemContainer {
-    visibility: hidden;
-  }
-}
-.songItemContainer {
-  visibility: hidden;
 }
